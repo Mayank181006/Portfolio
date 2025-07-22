@@ -3,22 +3,25 @@ import gsap from "gsap";
 import InfiniteMarquee from "./InfiniteMarquee";
 import ProjectsSection from "./ProjectsSection";
 import CertificateSlider from "./CertificateSlider";
+import webdevImg from "@/assets/services/webdev.png";
+import graphicImg from "@/assets/services/graphic.png";
+import uiuxImg from "@/assets/services/ui.png";
 
 const cardsData = [
   {
-    img: "/services/webdev.png",
+    img: webdevImg,
     align: "self-start",
     title: "Web Development",
     desc: "From landing pages to full-scale web experiences, I create custom websites with smooth, seamless animations that leave a lasting impression.",
   },
   {
-    img: "/services/graphic.png",
+    img: graphicImg,
     align: "self-end",
     title: "Graphic Design",
     desc: "From logos to complete brand identities, I design visuals that make your business unforgettable.",
   },
   {
-    img: "/services/ui.png",
+    img: uiuxImg,
     align: "self-start",
     title: "UI / UX Design",
     desc: "From intuitive interfaces to full-scale digital experiences, I design modern, engaging, and responsive layouts that deliver a stunning user experience.",

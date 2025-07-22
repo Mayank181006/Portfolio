@@ -1,14 +1,23 @@
 import React from "react";
+import reactLogo from "@/assets/skills/reactjs.svg";
+import htmlLogo from "@/assets/skills/html5.svg";
+import tailwindLogo from "@/assets/skills/tailwind.svg";
+import framerMotionLogo from "@/assets/skills/framermotion.svg";
+import gsapLogo from "@/assets/skills/gsap.png";
+import locomotiveLogo from "@/assets/skills/locomotive.png";
+import sheryLogo from "@/assets/skills/sheryjs.png";
+
 
 const skills = [
-    { logo: "/skills/reactjs.svg", label: "React JS" },
-    { logo: "/skills/html5.svg", label: "HTML5" },
-    { logo: "/skills/tailwind.svg", label: "Tailwind CSS" },
-    { logo: "/skills/framermotion.svg", label: "Framer Motion" },
-    { logo: "/skills/gsap.png", label: "GSAP" },
-    { logo: "/skills/locomotive.png", label: "Locomotive Scroll" },
-    { logo: "/skills/sheryjs.png", label: "Shery.js" },
+  { logo: reactLogo, label: "React JS" },
+  { logo: htmlLogo, label: "HTML5" },
+  { logo: tailwindLogo, label: "Tailwind CSS" },
+  { logo: framerMotionLogo, label: "Framer Motion" },
+  { logo: gsapLogo, label: "GSAP" },
+  { logo: locomotiveLogo, label: "Locomotive Scroll" },
+  { logo: sheryLogo, label: "Shery.js" },
 ];
+
 
 const InfiniteMarquee = () => {
     return (

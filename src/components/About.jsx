@@ -4,6 +4,8 @@ import { FaYoutube } from "react-icons/fa6";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { RiNextjsLine } from "react-icons/ri";
 import { TbBrandThreejs, TbColorSwatch } from "react-icons/tb";
+import profilePic from "@/assets/profile/profile.jpg";
+import projectPreview from "@/assets/profile/project.png";
 
 const About = () => {
   const [clickedCard, setClickedCard] = useState(null);
@@ -93,13 +95,13 @@ const About = () => {
         <Card className="md:col-span-2 md:row-span-2">
           {isMobile ? (
             <div className="flex flex-col items-center text-center">
-              <img src="/profile/profile.jpg" alt="profile" className="rounded-2xl w-28 h-28 object-cover" />
+              <img src={profilePic} alt="profile" className="rounded-2xl w-28 h-28 object-cover" />
               <h2 className="text-[9vw] font-bold mt-3 leading-none">Mayank Arora</h2>
               <p className="text-gray-400 text-[4vw]">Design-driven frontend web developer</p>
             </div>
           ) : (
             <div className="flex items-center gap-6">
-              <img src="/profile/profile.jpg" alt="profile" className="rounded-2xl w-40 h-40 object-cover" />
+              <img src={profilePic} alt="profile" className="rounded-2xl w-40 h-40 object-cover" />
               <div>
                 <p className="text-gray-400 text-sm">Frontend Developer</p>
                 <h2 className="text-4xl font-bold leading-none">Mayank Arora</h2>
@@ -112,7 +114,7 @@ const About = () => {
           <p className="text-lg italic">“Design isn't just how it looks, it's how it works.”</p>
         </Card>
         <Card
-          href="/profile/MayankCV.pdf"
+          href="./profile/MayankCV.pdf"
           download
           onClick={() => handleMobileClick("resume")}
           className={clickedCard === "resume" ? "scale-105" : ""}
@@ -139,7 +141,7 @@ const About = () => {
             <h4 className="font-['bebas'] text-[8vw] md:text-3xl bg-gradient-to-b from-white to-zinc-800 bg-clip-text text-transparent -mb-5 md:-mb-4">
               My Projects
             </h4>
-            <img className="w-2/3" src="/profile/project.png" alt="projects preview" />
+            <img className="w-2/3" src={projectPreview} alt="projects preview" />
           </div>
           <div className="flex justify-between items-center">
             <div>

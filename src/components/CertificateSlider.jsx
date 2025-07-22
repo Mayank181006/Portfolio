@@ -3,12 +3,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+import deloitteCert from "@/assets/certificates/deloitte.png";
+import oracleFundamentals from "@/assets/certificates/oraclef.png";
+import oracleTraining from "@/assets/certificates/oraclet.png";
+import simplilearnWebDev from "@/assets/certificates/simplilearnwebdevbeg.png";
+
 
 const certificates = [
-  { img: "/certificates/deloitte.png" },
-  { img: "/certificates/oraclef.png" },
-  { img: "/certificates/oraclet.png" },
-  { img: "/certificates/simplilearnwebdevbeg.png" },
+  { img: deloitteCert },
+  { img: oracleFundamentals },
+  { img: oracleTraining },
+  { img: simplilearnWebDev },
 ];
 
 const CertificateSliderSwiper = () => {

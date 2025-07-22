@@ -2,14 +2,18 @@ import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { AnimatedButton } from "./AnimatedButton";
 import { FiGlobe, FiGithub, FiArrowRight } from "react-icons/fi";
+import ochiImage from "@/assets/projects/ochi.png";
+import shoesImage from "@/assets/projects/shoes.png";
+import ebikeImage from "@/assets/projects/ebike.png";
+import portfolioImage from "@/assets/projects/portfolio.png";
 
 const projects = [
   {
     title: "Ochi.design UI Clone",
     tech: ["React", "TailwindCSS", "GSAP", "Locomotive", "Framer Motion"],
     description:
-      "A visual clone of ochi.design created using React, Tailwind CSS, GSAP, Framer Motion, and Locomotive Scroll. This project replicates the core layout, animations, and user experience of the original site as a learning and portfolio project.",
-    image: "/projects/ochi.png",
+      "A visual clone of ochi.design created using React, Tailwind CSS, GSAP, Framer Motion, and Locomotive Scroll...",
+    image: ochiImage,
     live: "https://mayank181006.github.io/ochi.design-UI-Clone/",
     github: "https://github.com/Mayank181006/ochi.design-UI-Clone",
   },
@@ -18,8 +22,7 @@ const projects = [
     tech: ["Html5", "SwiperJS", "JavaScript"],
     description:
       "An interactive responsive website showcasing different shoe models with smooth swipe transitions powered by SwiperJS.",
-    image:
-      "/projects/shoes.png",
+    image: shoesImage,
     live: "https://mayank181006.github.io/Shoes-Website/",
     github: "https://github.com/Mayank181006/Shoes-Website",
   },
@@ -28,8 +31,7 @@ const projects = [
     tech: ["React", "TailwindCSS", "GSAP"],
     description:
       "A sleek landing page for an E-bike company with animated transitions and dynamic color themes.",
-    image:
-      "/projects/ebike.png",
+    image: ebikeImage,
     live: "https://mayank181006.github.io/E-bike-Website-/",
     github: "https://github.com/Mayank181006/E-bike-Website-",
   },
@@ -38,12 +40,12 @@ const projects = [
     tech: ["React", "TailwindCSS", "GSAP", "SwiperJS"],
     description:
       "A personal portfolio with smooth scroll animations, project showcase, and contact form.",
-    image:
-      "/projects/portfolio.png",
+    image: portfolioImage,
     live: "https://mayank181006.github.io/Portfolio-Website/",
     github: "https://github.com/Mayank181006/Portfolio-Website",
   },
 ];
+
 
 const ProjectsSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
